@@ -480,6 +480,72 @@
     .about-stat b{ font-size:26px; }
     .gallery-grid{ grid-template-columns:repeat(2,1fr); grid-auto-rows:150px; }
   }
+  @media (max-width:640px){
+    /* tighter mobile rhythm — same content, much shorter scroll */
+    .section-head{ margin-bottom:26px; }
+    .section-head h2{ font-size:30px; }
+    .section-head p{ font-size:14px; }
+
+    .trust-inner{ display:grid; grid-template-columns:1fr 1fr; gap:14px 12px; padding:20px 18px; }
+    .trust-item{ gap:9px; }
+    .trust-item svg{ width:20px; height:20px; }
+    .trust-item span{ font-size:12px; }
+    .trust-item small{ font-size:10.5px; }
+
+    .services{ padding:54px 0 48px; }
+    .services-grid{ gap:10px; }
+    .service-card{ padding:16px 12px; }
+    .service-card h3{ font-size:16px; margin-bottom:5px; }
+    .service-card p{ font-size:12.5px; line-height:1.45; }
+    .service-icon{ width:36px; height:36px; margin-bottom:10px; border-radius:8px; }
+    .service-icon svg{ width:18px; height:18px; }
+
+    .before-after{ padding:54px 0; }
+    .ba-showcase{ gap:22px; }
+    .ba-video-frame{ width:min(290px, 80vw); }
+    .ba-project h3{ font-size:24px; margin-bottom:10px; }
+    .ba-project p{ font-size:14px; line-height:1.6; }
+
+    .gallery{ padding:54px 0 58px; }
+    .gallery-grid{ grid-auto-rows:118px; gap:10px; }
+    .g-caption{ opacity:1; transform:translateY(0); font-size:11px; }
+
+    .why{ padding:54px 0; }
+    .why-inner{ gap:26px; }
+    .why-row{ padding:15px 0; gap:14px; }
+    .why-row h4{ font-size:17px; }
+    .why-row p{ font-size:13.5px; }
+
+    .reviews{ padding:54px 0; }
+
+    .about{ padding:54px 0; }
+    .about-inner{ gap:26px; }
+    .about-copy p{ font-size:14px; line-height:1.6; }
+    .about-stats{ margin-top:18px; gap:8px; }
+    .about-stat b{ font-size:22px; }
+    .owner-card{ padding:26px 22px; }
+
+    .contact{ padding:54px 0; }
+    .contact-side{ padding:32px 22px; }
+    .contact-side > p{ margin-bottom:20px; }
+    .c-item{ margin-bottom:15px; }
+    .contact-form{ padding:28px 18px 32px; }
+    .field{ margin-bottom:12px; }
+    .field label{ margin-bottom:5px; }
+    .field input, .field select, .field textarea{ padding:11px 13px; font-size:14px; }
+    .field textarea{ min-height:78px; }
+
+    .final-cta{ padding:66px 0; }
+    .final-cta p{ margin-bottom:26px; font-size:15px; }
+
+    footer{ padding:42px 0 0; }
+    .footer-top{ grid-template-columns:1fr 1fr; gap:24px 18px; padding-bottom:28px; }
+    .footer-col:first-child{ grid-column:span 2; }
+    .footer-col:last-child{ grid-column:span 2; }
+    footer h5{ margin-bottom:10px; }
+    footer ul li{ margin-bottom:7px; }
+    .footer-bottom{ padding:16px 0; }
+  }
   @media (prefers-reduced-motion: reduce){
     *{ animation-duration:0.001ms !important; transition-duration:0.001ms !important; scroll-behavior:auto !important; }
   }
